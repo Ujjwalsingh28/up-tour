@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+{% load static %}
+{% block childpage %}
+{% if request.session.user %}
+
+
+<h1 class="my-4" style="text-align:center;"><i><b class="color1">Destina</b>tions</i></h1>
+    <hr class="w-25 m-auto">
+
+<div class="container my-5">
+<div class="row">
+
+   <div class="col-sm-4">
+<div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/varanasi.jpg' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+       <h2 class="card-title text-dark">Varanasi</h2>
+    <p class="card-text text-dark"><small><b>Varanasi – Ganga ghat</b></small></p>
+    <p class="card-text">It is a city situated on the banks of Ganga river in the northern Indian state of Uttar Pradesh dating to the 11th century B.C. Regarded as the spiritual capital of India.</p>
+       <a href="/varanasi"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+        </div>
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/agra/taj-1.jpg' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Agra</h2>
+    <p class="card-text text-dark"><small><b>Agra – City of Wonders</b></small></p>
+    <p class="card-text">Agra, nestled on the banks of the Yamuna River, is famed for the iconic Taj Mahal, Agra Fort, and Fatehpur Sikri. A blend of Mughal history, rich culture, and vibrant markets, it remains a top tourist destination.</p>
+       <a href="/agra"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/vrindavan-up.jpg' %}" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Vrindavan</h2>
+   <p class="card-text text-dark"><small><b>Vrindavan – Sacred Town of Krishna</b></small></p>
+    <p class="card-text">Vrindavan, known for its deep spiritual connection to Lord Krishna, is famous for its ancient temples and vibrant festivals. A revered destination for pilgrims worldwide.</p>
+       <a href="/vrindavan"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/Jaunpur/shahi kila.webp' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Jaunpur</h2>
+      <p class="card-text text-dark"><small><b>Jaunpur – Shahi Qila Jaunpur</b></small></p>
+    <p class="card-text">Jaunpur is a city in southeastern Uttar Pradesh, India, situated approximately 55 kilometers northwest of Varanasi along the Gomati River. .</p>
+      <a href="/pratapgarh"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/ayodhya/Ayodhya.jpg' %}" class="card-img" alt="Clickable Image" width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Ayodhya</h2>
+      <p class="card-text text-dark"><small><b>Ayodhya – Birthplace of Lord Rama</b></small></p>
+    <p class="card-text">Ayodhya, an ancient city on the banks of the Sarayu River, holds great religious significance as the birthplace of Lord Rama. Known for its temples and spiritual heritage, it is a major pilgrimage site for Hindus.</p>
+      <a href="/ayodhya"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/Lucknow.jpg' %}" class="card-img" alt="Clickable Image"
+       onclick="redirectToPage()" width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Lucknow</h2>
+       <p class="card-text text-dark"><small><b>Lucknow – RUMI-DARWAZA LUCKNOW</b></small></p>
+    <p class="card-text">Lucknow, known for its Nawabi culture, delectable cuisine, and elegant Chikankari embroidery, blends tradition with modernity.</p>
+      <a href="/lucknow"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px; " herf="varanasi.html">
+  <img src="{% static 'images/Prayagraj.webp' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Prayagraj</h2>
+       <p class="card-text text-dark"><small><b>Prayagraj – Khusro Bagh </b></small></p>
+    <p class="card-text">Prayagraj, at the confluence of the Ganga, Yamuna, and Saraswati rivers, is renowned for the Kumbh Mela and its rich spiritual heritage.</p>
+      <a href="/prayagraj"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/Chitrakoot.webp' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Chitrakoot</h2>
+       <p class="card-text text-dark"><small><b>Chitrakoot – Ram Ghat</b></small></p>
+    <p class="card-text">Chitrakoot, a revered pilgrimage site, is known for its association with Lord Rama and its serene natural beauty, temples, and ghats.</p>
+      <a href="/chitrakoot"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+     <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/Kanpur.avif' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Kanpur</h2>
+       <p class="card-text text-dark"><small><b>Kanpur – JK TEMPLE IN KANPUR</b></small></p>
+    <p class="card-text">Kanpur, a major industrial city in Uttar Pradesh, is known for its leather industry, educational institutions, and historical significance.</p>
+      <a href="/kanpur"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/Etawah.avif' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Etawah</h2>
+       <p class="card-text text-dark"><small><b>Etawah – Safari Park</b></small></p>
+    <p class="card-text">Etawah, located in Uttar Pradesh, is known for its historical landmarks, agricultural significance, and the Etawah Lion Safari. It serves as a regional center for trade and culture.</p>
+      <a href="/etawah"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/mirza.jpg' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Mirzapur</h2>
+      <p class="card-text text-dark"><small><b>Mirzapur – Wyndom Falls</b></small></p>
+    <p class="card-text">Mirzapur is a city located in the northern part of Uttar Pradesh, India, known for its rich history, culture, and natural beauty. .</p>
+      <a href="/mirzapur"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+<div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/raebareli.jpg' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Hastinapur</h2>
+      <p class="card-text text-dark"><small><b>Hastinapur – Bada Digambar Jain Mandir</b></small></p>
+    <p class="card-text">Hastinapur is an ancient city in Uttar Pradesh, India, renowned for its historical and religious, where it served as the capital of the Kuru dynasty, home to the Pandavas and Kauravas.</p>
+      <a href="/raebareli"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+
+</div>
+</div>
+{% else %}
+<script>alert("You have to login first..");location.href="/login";</script>
+
+{% endif %}
+<!--img src="{% static 'images/varanasi.jpg' %}" class="card-img" alt="..." usemap="#varanasi">
+    <map name="varanasi">
+        <area shape="default" coords="3 2,537 357" href="/varanasi.html">
+    </map-->
+
+
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+<style>
+    .form-control{
+    height:50px;
+    border:0 !important;
+
+    }
+    .a{
+    max-width:850px;
+    margin:auto;
+    margin-bottom:50px;
+
+    }
+
+</style>
+
+
+    <!--Heading-->
+<div class="row ">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4 mx-auto text-center my-5">
+        <h1 ><b class="color1">Login</b> Here..</h1>
+        <hr class="w-75 m-auto">
+
+    </div>
+</div>
+<div class="container a  " style="background:#E0E0E0;">
+
+<!--end Heading-->
+<div class="row">
+
+    <div class="col-sm-6 my-4">
+        <form method="post">
+            {% csrf_token %}
+        Userid<br><input type="email" name="userid" class="form-control shadow-lg mb-2" placeholder="username..."/>
+
+
+        Password<br><input type="password" name="passwd" class="form-control shadow-lg mb-2" placeholder="password..."/>
+        <input type="submit" value="Login" class="btn bgmycolor1 border-0 form-control border-0 my-4"/>
+</form>
+    </div>
+    <div class="col-sm-6">
+        <img src="{% static 'images/welll.jpg' %}" style="max-height:330px; width:400px;"/>
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+{% block childpage %}
+
+<!--slider-->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade slider"  data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/prem.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2 class="text-black"><b>VRINDAVAN</b></h2>
+        <p>Vrindavan, known for its deep spiritual connection to Lord Krishna, is famous for its ancient temples and vibrant festivals. A revered destination for pilgrims worldwide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/kashi.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2 class="text-black"><b>KASHI</b></h2>
+        <p>Kashi, India's spiritual capital on the Ganges, is renowned for its temples, ghats, and timeless culture.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/hanumant dham1.jpg' %}" class="d-block w-100 " alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2 class="text-black"><b>HANUMANT DHAM</b></h2>
+        <p>Hanumant Dham in Ayodhya is a revered temple dedicated to Lord Hanuman, known for its spiritual significance and serene ambiance near Ram Janmabhoomi.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<h1 class="text-dark ps-5 mt-3"><b class="color1">UP </b>TOUR</h1><br/>
+
+    <p class="ps-5"><b>Uttar Pradesh (UP), in northern India, is a culturally rich and historically significant state. It is home to the Taj Mahal in Agra, a UNESCO World Heritage Site and a global symbol of love. Varanasi, one of the world's oldest cities, is a spiritual hub with its sacred ghats and the Ganga Aarti. The capital city, Lucknow, is known for its Nawabi heritage, Mughal architecture, and delectable Awadhi cuisine. Ayodhya and Mathura-Vrindavan are important religious sites linked to Lord Rama and Lord Krishna, respectively. The state hosts vibrant festivals like Holi, Diwali, and the Kumbh Mela, attracting millions of visitors. Wildlife enthusiasts can explore the Dudhwa National Park and Okhla Bird Sanctuary. Uttar Pradesh's diverse attractions, accessible by air, rail, and road, make it a must-visit destination. The best time to explore the state is from October to March..</b></p>
+
+
+
+<!--slider-end-->
+
+<!--card-->
+ <section class="card py-5 mt-5 bg-light ps-5">
+     <div class="text-center ms-5 my-5">
+
+          <h1 class="H1" style="text-align:center;"><i><b class="color1">Popular</b> Destination</i></h1>
+    <hr class="w-25 m-auto">
+     </div>
+
+
+<div class="row">
+    <div class="col-sm-4">
+<div class="card text-bg-dark my-3 mx-3" style="height:300px; width:450px;">
+  <img src="{% static 'images/varanasi.jpg' %}" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Varanasi</h2>
+      <p class="card-text text-dark"><small><b>Varanasi – Ganga ghat</b></small></p>
+    <p class="card-text">It is a city situated on the banks of Ganga river in the northern Indian state of Uttar Pradesh dating to the 11th century B.C. Regarded as the spiritual capital of India.</p>
+       <a href="/varanasi"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+        </div>
+    <div class="col-sm-4">
+<div class="card text-bg-dark my-3 mx-3" style="height:300px; width:450px;">
+  <img src="{% static 'images/agra/taj-1.jpg' %}" class="card-img" alt="..." width="400px" height="300px">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Agra</h2>
+      <p class="card-text text-dark"><small><b>Agra – City of Wonders</b></small></p>
+    <p class="card-text">Agra, nestled on the banks of the Yamuna River, is famed for the iconic Taj Mahal, Agra Fort, and Fatehpur Sikri. A blend of Mughal history, rich culture, and vibrant markets, it remains a top tourist destination.</p>
+       <a href="/agra"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+        </div>
+
+    <div class="col-sm-4">
+    <div class="card text-bg-dark my-3 mx-3" style="height:300px; width:400px;">
+  <img src="{% static 'images/vrindavan-up.jpg' %}" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h2 class="card-title text-dark">Vrindavan-up</h2>
+      <p class="card-text text-dark"><small><b>Vrindavan – Sacred Town of Krishna</b></small></p>
+    <p class="card-text">Vrindavan, known for its deep spiritual connection to Lord Krishna, is famous for its ancient temples and vibrant festivals. A revered destination for pilgrims worldwide.</p>
+       <a href="/vrindavan"><button class="btn btn-primary">Know More</button></a>
+  </div>
+</div>
+    </div>
+
+<a href="/destinations"><button class="btn bg-danger ">See More</button></a>
+    </div>
+    </div>
+<div class="row" style="margin:auto ;">
+<a href="/destinations"><button class="btn bg-danger ">See More</button></a>
+    </div>
+     </section>
+<!--card-end-->
+
+<!--team section-->
+
+
+    <h1 class="H1" style="text-align:center;"><i><b class="color1">Our</b> Team</i></h1>
+      <hr class="w-25 m-auto">
+<div class="row team mt-5 ms-5  ">
+    <div class="col-sm-3 ms-5">
+        <div class="card mx-auto cardzoom my-4" style="width: 16rem;">
+  <img src="{% static 'images/chaubey2.png' %}" class="card-img-top img-fluid" alt="..." >
+  <div class="card-body">
+    <h5 class="card-title">HARSH CHAUBEY</h5>
+      <h6 class="card-subtitle">Group Leader</h6>
+    <p class="card-text text-justify">Tester</p>
+  </div>
+</div>
+
+    </div>
+    <div class="col-sm-3 ms-5">
+        <div class="card mx-auto cardzoom my-4" style="width: 18rem;">
+  <img src="{% static 'images/vivek_2.png' %}" class="card-img-top img-fluid" alt="..." >
+  <div class="card-body">
+    <h5 class="card-title">VIVEK YADAV</h5>
+      <h6 class="card-subtitle"></h6>
+    <p class="card-text text-justify">Back-end Developer.</p>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-3 ps-5 ms-5">
+        <div class="card mx-auto cardzoom my-4" style="width: 17.5rem;">
+  <img src="{% static 'images/ujjwal2.png' %}" class="card-img-top img-fluid" alt="..." >
+  <div class="card-body">
+    <h5 class="card-title">UJJWAL SINGH</h5>
+      <h6 class="card-subtitle"></h6>
+    <p class="card-text text-justify">Front-end Developer</p>
+  </div>
+</div>
+    </div>
+
+</div>
+<!--team section end-->
+{% endblock %}
+
+

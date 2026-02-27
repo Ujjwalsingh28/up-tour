@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block childpage %}
+
+
+<h1 class="my-4" style="text-align:center;"><b class="color1">Gall</b>ery <i class="fa-regular fa-image"></i></h1>
+    <hr class="w-25 m-auto">
+
+
+<div class="container-fluid ">
+  <div class="row bg-secondary">
+      {% for x in pdata %}
+      <div class="col-sm-4 py-2">
+
+      <img src="../{{x.picture}}" class=" gallery-image  img-thumbnail "  alt="...">
+
+
+</div>
+      {% endfor %}
+  </div>
+     </div>
+<div class="modal" id="image-modal">
+  <img src="" alt="" class="modal-image">
+  <span class="close">&times;</span>
+</div>
+
+
+  </div>
+
+
+
+{% endblock %}

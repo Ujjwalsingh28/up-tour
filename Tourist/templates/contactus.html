@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block childpage %}
+
+
+<!--div class="container my-3"-->
+<h1 class="my-4" style="text-align:center;"><b class="color1">Feed</b>back</h1>
+    <hr class="w-25 m-auto">
+
+<div class="row">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+
+  <form autocomplete="off" method="post">
+      {% csrf_token %}
+
+       Name<br>
+      <input type="text"  name="name" placeholder="Your name.." class="form-control shadow-lg">
+
+    Email<br>
+    <input name="email" class="form-control shadow-lg mb1 bg-body-tertiary rounded-0" type="email" required placeholder="email..."/>
+
+   Address<br>
+    <input name="address" class="form-control shadow-lg" type="text" placeholder="address..">
+
+    Subject<br>
+    <input name="subject" class="form-control shadow-lg mb1 bg-body-tertiary rounded-0" type="text" required placeholder="subject......."/>
+     Massage<br>
+    <textarea name="msg" class="form-control shadow-lg mb-1 bg-body-tertiary rounded-0  " style="min-height:90px;" placeholder="massage"></textarea>
+
+    <input type="submit" value="Save" class="btn mybgcolor2 form-control  mb-1 rounded   w-25"/>
+
+  </form>
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+  </div>
+
+{% endblock %}

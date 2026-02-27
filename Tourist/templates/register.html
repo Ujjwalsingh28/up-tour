@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load static %}
+{% block childpage %}
+
+  <!--start heading-->
+<div class="row pt-3">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4 mx-auto text-center my-4">
+        <h1 ><b class="color1">Register</b> Now..</h1>
+        <hr class="w-75 m-auto">
+
+    </div>
+</div>
+<!--end heading-->
+
+  <div class="row pb-5 pt-3">
+
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 shadow-lg" style="background:#EEEEEE;">
+            <form autocomplete="off" method="post" enctype="multipart/form-data" >
+                {% csrf_token %}
+            <div class="row 4 py-2  " >
+                <div class="col-sm-6" >
+                    <div class="input-group flex-nowrap">
+  <span class="input-group-text" ><i class="fa-solid fa-user"></i></span>
+  <input type="text" name="name" class="form-control" required placeholder="Enter your name.." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+                </div>
+                              <div class="col-sm-6">
+                    <div class="input-group flex-nowrap">
+  <span class="input-group-text" >@</span>
+  <input type="email" name="email" class="form-control" required placeholder="Enter your Email.." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+                </div>
+
+            </div>
+             <div class="row 4 py-2 ">
+                <div class="col-sm-6 ">
+                    <div class="input-group flex-nowrap">
+  <span class="input-group-text" ><i class="fa-solid fa-house"></i></span>
+  <input type="text" name="address" class="form-control" required placeholder="Enter your Address.." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+                </div>
+                              <div class="col-sm-6">
+                    <div class="input-group flex-nowrap">
+  <span class="input-group-text" ><i class="fa-solid fa-phone"></i></span>
+  <input type="tel" pattern="[0-9]{10}" name="mobile" class="form-control" required placeholder="Enter your Mobile.." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+                </div>
+
+            </div>
+             <div class="row 4 py-2">
+                <div class="col-sm-6">
+                    <div class="input-group flex-nowrap">
+  <span class="input-group-text" ><i class="fa-solid fa-location-dot"></i></span>
+  <input type="text" name="city" class="form-control" required placeholder="Enter your City..." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+                </div>
+                              <div class="col-sm-6">
+                    <div class="input-group flex-nowrap">
+  <span class="input-group-text" ><i class="fa-solid fa-user"></i></span>
+  <input type="number" name="pincode" class="form-control" required placeholder="Enter your Pincode..." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+                </div>
+
+            </div>
+             <div class="row 4 py-2">
+                <div class="col-sm-6">
+                    <div class="input-group flex-nowrap">
+  <span class="input-group-text" ><i class="fa-solid fa-lock"></i></span>
+  <input type="password" name="passwd" class="form-control" required placeholder="Enter your Password.." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+                </div>
+                 <div class="col-sm-6 ">
+                     <input type="submit" value="Submit Now"  class="btn bg-mycolor1 mb-3"  />
+
+                </div>
+
+            </div>
+
+
+            </form>
+        </div>
+<div class="col-sm-2"></div>
+    </div>
+
+
+
+{% endblock %}
